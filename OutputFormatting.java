@@ -2,7 +2,7 @@ package br.com.alura.screenmatch.principal;
 
 import java.util.Scanner;
 
-public class HackerHank {
+public class OutputFormatting {
 
     public static void main(String[] args) {
         //BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
