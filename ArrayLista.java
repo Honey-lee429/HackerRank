@@ -1,8 +1,8 @@
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 import java.util.Scanner;
 
-public class ArrayLista {
+public class HackerRank {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -11,41 +11,63 @@ public class ArrayLista {
         int quantidadeLinha = scanner.nextInt();
         int i;
         int j;
-        List<Integer> lista = new ArrayList<>();
+        ArrayList[] lista = new ArrayList[20000];
 
         for (i = 0; i < quantidadeLinha; i++) {
             System.out.println("informe a quantidade de numeros no array: ");
-            List<Integer> l = new ArrayList<>();
+            lista[i] = new ArrayList();
             int quantidadeNumeroNoArray = scanner.nextInt();
             for (j = 0; j < quantidadeNumeroNoArray; j++) {
                 System.out.println("digite um numero");
                 int n = scanner.nextInt();
-                l.add(n);
-                lista.addAll(l);
-
-                }
+                lista[i].add(n);
 
             }
-        System.out.print(lista);
 
-
-        System.out.println("informe query");
+        }
+        System.out.println("numero de query");
         int query = scanner.nextInt();
-        for (int m = 0; m < query; m++) {
+        for (int i1 = 0; i1 < query; i1++) {
             var linha = scanner.nextInt();
-            for (int o = 0; o < linha; o++) {
-                var coluna = scanner.nextInt();
-                // [1,2] [3,6]
-                lista.get(linha);
-                lista.get(coluna);
+            var coluna = scanner.nextInt();
+            try {
+                System.out.println(lista[linha - 1].get(coluna - 1));
+            } catch (Exception e) {
+                System.out.println("ERROR!");
             }
-            System.out.println(lista);
         }
 
+        System.out.print(Arrays.deepToString(lista));
 
-        }
 
     }
+
+        /*Sample Input
+        *
+        *   5
+            5 41 77 74 22 44
+            1 12
+            4 37 34 36 52
+            0
+            3 20 22 33
+            5
+            1 3
+            3 4
+            3 1
+            4 3
+            5 5
+            *
+            *
+            *
+            * Sample Output
+            *
+            *   74
+                52
+                37
+                ERROR!
+                ERROR!*/
+
+}
 
 
 
