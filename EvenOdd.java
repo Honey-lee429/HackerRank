@@ -20,6 +20,6 @@ public class EvenOdd {
             System.out.println("Not Weird");
         }
 
-
+        bufferedReader.close();
     }
 }
