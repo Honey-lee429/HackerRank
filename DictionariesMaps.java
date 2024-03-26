@@ -2,25 +2,11 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-/**
- * Task
- * Given a string, S, of length N that is indexed from 0 to , N-1 print its even-indexed and odd-indexed characters as  space-separated strings on a single line (see the Sample below for more detail).
- * <p>
- * Note:  is considered to be an even index.
- * <p>
- * Sample Input
- * <p>
- * 2
- * Hacker
- * Rank
- * Sample Output
- * <p>
- * Hce akr
- * Rn ak
- */
 
 /*Digitar quantos contatos que verificar
- * digitar o nome do contato e numero
+ * digitar o nome do contato 
+ * digete o numero
+ * digite o nome que quer buscar
  * devolver nome=numero se houver na lista
  * devolver not found se não houver na lista
  * */
